@@ -58,8 +58,8 @@ public class ScoreFragment extends Fragment {
 				GoalScorer goalScorer = result.getParcelable(SCORER_KEY);
 				homeGoalScorerList.add(goalScorer);
 				for (int i = 0; i<homeGoalScorerList.size();i++){
-					home = binding.textHomeScorer.getText() + homeGoalScorerList.get(i).getName() + ", "+
-							homeGoalScorerList.get(i).getMinute()+"\""+" ; ";
+					home = binding.textHomeScorer.getText() + homeGoalScorerList.get(i).getName() + " " +
+							homeGoalScorerList.get(i).getMinute()+"\" ";
 				}
 				binding.textHomeScorer.setText(home);
 			}
@@ -70,8 +70,8 @@ public class ScoreFragment extends Fragment {
 				GoalScorer goalScorer = result.getParcelable(SCORER_KEY);
 				awayGoalScorerList.add(goalScorer);
 				for (int i = 0; i<awayGoalScorerList.size();i++){
-					away = binding.textAwayScorer.getText() + awayGoalScorerList.get(i).getName() + ", "+
-							awayGoalScorerList.get(i).getMinute()+"\""+" ; ";
+					away = binding.textAwayScorer.getText() + awayGoalScorerList.get(i).getName() + " " +
+							awayGoalScorerList.get(i).getMinute()+"\" ";
 				}
 				binding.textAwayScorer.setText(away);
 			}

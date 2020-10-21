@@ -46,6 +46,8 @@ public class GoalFragment extends Fragment {
 			@Override
 			public void onClick(View view) {
 				Bundle bundle = new Bundle();
+				goalScorer.setName(binding.inputName.getText().toString());
+				goalScorer.setMinute(Integer.parseInt(binding.inputMinute.getText().toString()));
 				bundle.putParcelable(ScoreFragment.SCORER_KEY, goalScorer);
 				getParentFragmentManager().setFragmentResult(requestKey, bundle);
 				Navigation.findNavController(view).navigateUp();

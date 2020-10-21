@@ -5,7 +5,9 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	>
 	<data>
-
+		<variable
+			name="fragment"
+			type="id.ac.polinema.skor.fragments.GoalFragment" />
 	</data>
 
 	<androidx.constraintlayout.widget.ConstraintLayout
